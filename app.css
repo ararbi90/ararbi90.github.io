@@ -1,0 +1,79 @@
+body{
+    background-color: #232323;
+    margin:0;
+}
+
+.title{
+    text-align: center;
+    background-color: #3B76A9;
+    color: white;
+    margin-bottom: 0;
+    transition-delay: 200ms;
+    transition-duration: 200ms;
+}
+
+.menu{
+    margin-top: -10px;
+    background-color: white;
+    text-align: center;
+}
+
+.color{
+    max-width: 30%;
+    background-color: #232323;
+    margin: 1.6%;
+    padding-top: 30%;
+    border-radius: 10%;
+    transition-duration: 200ms;
+    transition-delay: 200ms;
+    opacity: 1;
+}
+
+.color-hidden {
+	display: none;
+}
+
+/* ensure box is displayed block during the transition  */
+.color-transition.box-hidden {
+	display: block;
+	opacity: 0;
+}
+
+.color-transition {
+	transition: opacity 1s ease;
+}
+
+.container{
+    max-width: 600px;
+}
+
+button{
+    height: 100%;
+    width: auto;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #3B76A9;
+    margin:0;
+}
+
+button:hover{
+    color: white;
+    background: #3B76A9;
+}
+
+.menu-section{
+    margin:0;
+    padding:0;
+}
+
+.selectorColor{
+    background-color: #3B76A9;;
+    color: white;
+}
+
+.winner{
+    background-color:  "black";
+}
+
