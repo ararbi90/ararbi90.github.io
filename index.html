@@ -3,51 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Guessing Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/2e6a8e9c08.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Ahmed Arbi</title>
 </head>
-<body>
-    <div class="title">
-        <h1 class="font-weight-light">The Great</h1>
-        <h1 class="display-3 font-weight-light" id="colorDisplay">RGB(0, 0, 0)</h1>
-        <h1 class="font-weight-light">GUESSING GAME</h1>
+<body class="container pt-3">
+    <!--Intro section-->
+    <div class="container">
+        <div class="row center">
+            <img src="imgs/ahmed_arbi_2.JPG" alt="Profile picture" class="rounded-circle mx-auto d-block" style="height: 130px; text-align: center;"><br>
+        </div>
+        </div class="row text-center">
+            <h3 class="text-center mt-1">Ahmed Arbi</h3>
+                <div class="mt-1 text-center">
+                    Irvine, Ca - 92604 | <a href="com">ararbi90@gmail.com</a>
+                </div>
+                <div class="text-center mt-1">
+                    <a href="https://github.com/ararbi90/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/aarbi/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+                <hr>
+        </div>
     </div>
 
-    <div class="menu">
+    <div class="row justify-content-center" style="font-size: 1.2em;">
+        <p class="lead text-center text-secondary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad minima mollitia harum eveniet deserunt error molestias eaque. Earum harum natus commodi libero, voluptates a labore quisquam porro, aperiam, nihil dignissimos.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur doloremque ratione magnam, enim neque repellat quod debitis? Quis delectus odio animi culpa eius velit veniam repellendus ut, ex, illo odit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sunt nihil sit, voluptatem recusandae, rerum molestias, nemo omnis rem dolorem non nam repudiandae quas aperiam! Nihil molestiae ea ipsa distinctio!
+        </p>
+    </div>
+
+    <div class="row">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-3 col-4 menu-section" id="newGame"><button>New Game</button></div>
-                <div class="col-md-6 col-3 menu-section" id="message"></div>
-                <div class="col-md-3 col-5 menu-section">
-                    <class class="row">
-                        <div class="col">
-                            <button class="diffculty">Easy</button>
-                            <button class="diffculty selectorColor">Hard</button>
-                        </div>
-                    </class>
+            <div class="row">
+                <div class="p-2 mt-4 bg-primary text-white text-center" style="width: 100%;">EDUCATION</div>
+            </div>
+            <div class="row">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">University</th>
+                        <th scope="col">Degree</th>
+                        <th scope="col">Major</th>
+                        <th scope="col">GPA</th>
+                        <th scope="col">Graduation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>California State University, Long Beach</td>
+                        <td>Master of Science (MS)</td>
+                        <td>Computer Science</td>
+                        <td>4.0</td>
+                        <td>May 2019</td>
+                      </tr>
+                      <tr>
+                        <td>California State University, Long Beach</td>
+                        <td>Bachelor of Science (BS)</td>
+                        <td>Electrical Engineering</td>
+                        <td>3.9</td>
+                        <td>May 2015</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+        </div>
+    </div>
+
+    <!--WORK EXPERIANCE Section-->
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="p-2 mt-1 bg-primary text-white text-center" style="width: 100%;">WORK EXPERIANCE</div>
+            </div>
+            <!--Northrop Grumman-->
+            <div class="row justify-content-center mt-3">
+                <div class="col-sm-1">
+                    <img src="imgs/nglogo.png" style="height:50px;" alt="Northrop Grumman logo">
+                </div>
+                <div class="col-sm-11">
+                    <div>
+                        <a href="#ngc-collapse" data-toggle="collapse" style="color: black;">
+                            <h5>
+                                Software Engineer
+                            </h5>
+                            <b>Northrop Grumman</b>, Redondo Beach, CA | 
+                            <span style="color: grey;">Jun 2019 - Present</span>
+                        </a>
+                    </div>
+                    <!--Collapse Section-->
+                    <div id="ngc-collapse" class="collapse justify-content-left">
+                        <ul>
+                            <li>
+                                Developed new features and maintained existing software for a satellite ground station responsible for controlling and commanding payloads.
+                            </li>
+                            <li>
+                                Used JMS and Google Guice to create a service which monitored critical parameters of a satellite and informed the operator upon any change of state. 
+                            </li>
+                            <li>
+                                Implemented algorithms which decommutated and published incoming telemetry from satellites.
+                            </li>
+                            <li>
+                                Designed and implemented a software component responsible for the execution of mission critical commands.
+                            </li>
+                            <li>
+                                Automated the process to verify satellite health and operational status.
+                            </li>
+                            <li>
+                                Wrote Unit tests and increased code coverage to from 60% to 90%.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--Asi section-->
+            <div class="row justify-content-center mt-3">
+                <div class="col-sm-1">
+                    <img src="imgs/csulb_logo.png" style="height:50px;" alt="CSULB logo">
+                </div>
+                <div class="col-sm-11">
+                    <div>
+                        <a href="#asi-collapse" data-toggle="collapse" style="color: black;">
+                            <h5>
+                                Full Stack Developer
+                            </h5>
+                            <b>CSULB ASI</b>, Long Beach, CA | 
+                            <span style="color: grey;">May 2018 - Jun 2019</span>
+                        </a>
+                    </div>
+                    <div id="asi-collapse" class="collapse justify-content-left">
+                        <ul>
+                            <li>
+                                Took a lead role in designing and implementing mascot search site for the University which supports submissions from 30,000 viewers. Create an internal management page to assist the committee responsible for choosing the mascot.
+                            </li>
+                            <li>
+                                Regularly maintain and update various company websites to support daily activities.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--PPtek section-->
+            <div class="row justify-content-centers mt-3">
+                <div class="col-sm-1">
+                    <img src="imgs/pp_tek_logo.png" style="height:50px;" alt="Power Probe logo">
+                </div>
+                <div class="col-sm-11">
+                    <div>
+                        <a href="#pptek-collapse" data-toggle="collapse" style="color: black;">
+                            <h5>
+                                Electrical Engineer | Software Engineer
+                            </h5>
+                            <b>Power Probe Tek</b>, Brea, CA | 
+                            <span style="color: grey;">Apr 2016 - Apr 2018</span>
+                        </a>
+                    </div>
+                    <div id="pptek-collapse" class="collapse justify-content-left">
+                        <ul>
+                            <li>
+                                Implemented firmware on Arm-cortex M3 and L4 microcontrollers. Implementations included: timer-controlled finite state machines; communicates with external devices via I2C, UART and SPI protocols; generated specific outputs signal through DACs; sampled analog signals via ADCs.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="colors">
+    <div class="row">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="color col-4"></div>
-                <div class="color col-4"></div>
-                <div class="color col-4"></div>
-                <div class="color col-4"></div>
-                <div class="color col-4"></div>
-                <div class="color col-4"></div>
+            <div class="row">
+                <div class="p-2 mt-3 bg-primary text-white text-center" style="width: 100%;">PROJECTS</div>
             </div>
+            <div class="row mt-3 justify-content-center">
+                <a href="Color-Guessing-Game/game.html" target="_blank">Color Guessing game</a>
+            </div>
+            <hr>
+            <div class="row justify-content-center">
+                <a href="Candy-Museum/index.html" target="_blank">Candy Museum</a>
+            </div>
+
+            
         </div>
     </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 </html>
