@@ -1,0 +1,115 @@
+body{
+    background-color: #5CDB95;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+.container{
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    border-radius: 1%;
+}
+
+.space{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
+.snake{
+    background-color: black;
+}
+
+.apple{
+    background-color: red;
+}
+
+#buttonSection{
+    text-align:center;
+    width:50%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #05386B;
+    border: 2px solid #05386B;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-top:10px;
+    border-radius: 10%;
+    font-weight: normal;
+  }
+
+  button {
+    transition-duration: 0.1s;
+  }
+  
+  button:active {
+    background-color: #05386B;
+    opacity: 0.6;
+    color: white;
+}
+
+@media only screen and (min-width: 769px) {
+    .container{
+        width: 600px;
+        height: 600px;
+    }
+    .space{
+        width: 15px;
+        height: 15px;
+    }
+    #buttonSection{
+        display: none;
+    }
+    button:hover {
+        background-color: #5CDB95; /* Green */
+        color: #05386B;
+        font-weight: bold;
+        border: 2px solid #05386B ;
+      }
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 400px;
+        height: 400px;
+    }
+    .space{
+        width: 10x;
+        height: 10px;
+    }
+    #buttonSection{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .container{
+        width: 300px;
+        height: 300px;
+    }
+    .space{
+        width: 7.5px;
+        height: 7.5px;
+    }
+    #buttonSection{
+        display: block;
+    }
+}
